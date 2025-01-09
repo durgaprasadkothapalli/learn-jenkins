@@ -8,11 +8,13 @@ pipeline {
         }
         stage('Test') {
             steps {
+                     sh "this is test"
                 //
             }
         }
         stage('Deploy') {
-            steps {
+            steps { 
+                    sh "this is deploy"
                 //
             }
         }
