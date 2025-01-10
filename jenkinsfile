@@ -13,21 +13,21 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               sh 'echo this is deploy'
-                error 'pipeline failed'    
-            }
+                   sh 'echo this is deploy'
+                  error 'pipeline failed'    
+            }  
         }
-    }
+    // }
 
-    post {
-        always{
-            echo 'this sections run always'
-        }
-        success{
-            echo 'this section run when pipeline success'
-        }
-        failure{
-            echo 'this section run  when pipeline failure'        
-        }
-    }
+    // post {
+    //     always{
+    //         echo 'this sections run always'
+    //     }
+    //     success{
+    //         echo 'this section run when pipeline success'
+    //     }
+    //     failure{
+    //         echo 'this section run  when pipeline failure'        
+    //     }
+    // }
 }
