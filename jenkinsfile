@@ -3,37 +3,37 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+            
+                   sh  'this is build'
                 
-                   sh  "this is build"
                 
-                //
             }
         }
         stage('Test') {
             steps {
                 
                     sh 'this is test'
-                //
+                
             }
         }
         stage('Deploy') {
             steps {
                sh 'echo this is deploy'
                 error 'pipeline failed'
-                //
+                
             }
         }
     }
 
     post {
         always{
-            echo "this sections run always"
+            echo 'this sections run always'
         }
         sucess{
-            echo "this section run when pipeline"
+            echo 'this section run when pipeline'
         }
         failure{
-            echo "this section run  when pipeline failure"        
+            echo 'this section run  when pipeline failure'        
         }
     }
 }
