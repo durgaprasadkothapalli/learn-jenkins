@@ -29,7 +29,7 @@ pipeline {
         always{
             echo 'this sections run always'
         }
-        sucess{
+        success{
             echo 'this section run when pipeline'
         }
         failure{
