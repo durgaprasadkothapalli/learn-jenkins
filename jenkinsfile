@@ -16,7 +16,7 @@ pipeline {
 
                     sh 'echo This is sucesssful'
                     //error 'pipeline failed'
-                    this is good and best
+                    sh 'echo is good and best'
 
             }
         }
