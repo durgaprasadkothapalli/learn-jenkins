@@ -17,6 +17,7 @@ pipeline {
                   error 'pipeline failed'    
             }  
         }
+    }
     // }
 
     // post {
