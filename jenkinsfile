@@ -40,7 +40,7 @@ pipeline {
                 sh 'echo This is deploy'
                 sh 'env'
             }
-            when {
+            /* when {
                 expression { env.GIT_BRANCH != "origin/main" }
             }
             steps {
